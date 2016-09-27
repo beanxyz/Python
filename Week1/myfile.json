@@ -1,0 +1,25 @@
+{
+    "1":{
+            "name":"SiChuan",
+            "City":
+                {"1":{
+                    "name":"Chengdu",
+                    "Info":"Beautiful girls!"
+                    }},
+                 "2": {
+                     "name": "ZiGong",
+                     "Info": "Dinasour Musuem"
+                 }
+
+                 },
+    "2":{
+            "name":"HeNan",
+            "City":{
+                "1":{"name":"LuoHe","Info":"A big City."}}},
+    "3":{
+            "name":"Municipality",
+            "City":{
+                "1":{"name":"BeiJing","Info":"Most Famous Zone."},
+                "2":{"name":"ChongQing","Info":"Very Hot"}}}
+
+}

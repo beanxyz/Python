@@ -1,0 +1,75 @@
+09/05/2016 09:28:11 AM Administrator Login Successfully
+09/05/2016 09:29:17 AM Administrator Login Successfully
+09/05/2016 09:29:50 AM Administrator Login Successfully
+09/05/2016 09:56:46 AM Administrator Login Failed
+09/05/2016 09:56:49 AM Administrator Login Failed
+09/05/2016 09:56:52 AM Administrator Login Successfully
+09/05/2016 10:08:19 AM Administrator Login Successfully
+09/05/2016 10:08:32 AM Administrator Changed account 111 balance from 1111111 to 999999000 
+09/05/2016 10:14:44 AM Administrator Login Successfully
+09/05/2016 10:15:09 AM Administrator Login Successfully
+09/05/2016 10:15:13 AM Administrator query info of account 555
+09/05/2016 10:15:20 AM Administrator Deleted account 555
+09/05/2016 10:22:59 AM Administrator Login Successfully
+09/05/2016 10:23:13 AM Administrator query info of account 66
+09/05/2016 02:37:26 PM Account 111 successfully login
+09/05/2016 02:39:00 PM Account 111 successfully login
+09/05/2016 02:43:59 PM Administrator Login Successfully
+09/05/2016 04:17:23 PM Administrator Login Successfully
+09/05/2016 04:19:10 PM Administrator Login Failed
+09/05/2016 04:19:13 PM Administrator Login Successfully
+09/05/2016 04:19:52 PM Administrator query info of account Kevin
+09/06/2016 06:48:52 AM Administrator Login Successfully
+09/06/2016 06:50:57 AM Administrator Login Successfully
+09/06/2016 07:01:38 AM Administrator Login Successfully
+09/06/2016 07:02:01 AM Administrator Deleted account 222
+09/06/2016 07:06:01 AM Administrator Login Successfully
+09/06/2016 07:06:07 AM Administrator Changed account alex status to inactive
+09/06/2016 07:06:43 AM Account 111  login successfully
+09/06/2016 07:06:49 AM Account 111 deposit 222, current balance is 11112332
+09/06/2016 07:08:16 AM Account 111  login successfully
+09/06/2016 07:08:22 AM Account 111 deposit 1, current balance is 11112333
+09/06/2016 07:10:04 AM Account 111  login successfully
+09/06/2016 07:22:08 AM Administrator Login Successfully
+09/06/2016 07:22:22 AM Administrator Deleted account 111
+09/06/2016 07:23:34 AM Administrator Login Successfully
+09/06/2016 07:23:45 AM Administrator query info of account alex
+09/06/2016 07:24:45 AM Administrator Deleted account 222
+09/06/2016 07:30:52 AM Administrator Login Successfully
+09/06/2016 07:31:07 AM Administrator Deleted account aaa
+09/06/2016 07:34:32 AM Account 333  login successfully
+09/06/2016 07:34:34 AM Account 333 deposit 23, current balance is 33356
+09/06/2016 07:34:37 AM Account 333 withdrawl 23, current balance is 33333
+09/06/2016 07:34:50 AM Account 111  login successfully
+09/06/2016 07:34:54 AM Account 111 deposit 222, current balance is 23656
+09/06/2016 07:34:56 AM Account 111 withdrawl 23, current balance is 23633
+09/06/2016 07:35:01 AM User alex setup auto deposite 22 per month
+09/06/2016 07:40:41 AM Administrator Login Failed
+09/06/2016 07:40:46 AM Administrator Login Successfully
+09/06/2016 07:41:05 AM Administrator Deleted account bb
+09/06/2016 07:43:55 AM Administrator Login Successfully
+09/06/2016 07:44:31 AM Administrator Deleted account 2
+09/06/2016 08:36:20 AM Account 11  login successfully
+09/06/2016 08:36:24 AM Account 11 deposit 11, current balance is 22
+09/06/2016 08:36:33 AM Account 11 deposit 1, current balance is 23
+09/06/2016 08:37:24 AM User 11 setup auto deposite 11 per month
+09/06/2016 08:43:56 AM Account 3  login successfully
+09/06/2016 08:45:48 AM Account 3  login successfully
+09/06/2016 08:45:55 AM Account 3 deposit 100, current balance is 105
+09/06/2016 08:45:58 AM Account 3 withdrawl 2, current balance is 103
+09/06/2016 10:25:58 AM Account 11  login successfully
+09/06/2016 10:28:31 AM Administrator Login Failed
+09/06/2016 10:28:36 AM Administrator Login Successfully
+09/06/2016 10:28:40 AM Administrator Deleted account 11
+09/06/2016 10:28:48 AM Administrator Deleted account 3
+09/06/2016 10:31:02 AM Administrator query info of account alex
+09/06/2016 10:31:08 AM Administrator Changed account yuan status to inactive
+09/06/2016 10:31:21 AM Account 222  login successfully
+09/06/2016 10:31:35 AM Account 111  login successfully
+09/06/2016 10:31:42 AM Account 111 deposit 200, current balance is 300
+09/06/2016 10:31:46 AM Account 111 withdrawl 20, current balance is 280
+09/06/2016 10:36:29 AM Account 111  login successfully
+09/06/2016 10:36:33 AM Account 111 deposit 20, current balance is 190
+09/06/2016 10:36:36 AM Account 111 withdrawl 20, current balance is 170
+09/06/2016 10:42:19 AM Administrator Login Successfully
+09/06/2016 10:42:34 AM Administrator query info of account abc
