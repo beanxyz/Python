@@ -1,0 +1,30 @@
+11/13/2016 10:03:53 PM Connecting to 10.2.1.107:5672
+11/13/2016 10:03:53 PM Created channel=1
+11/13/2016 10:03:58 PM Connecting to 10.2.1.107:5672
+11/13/2016 10:03:59 PM Created channel=1
+11/13/2016 10:03:59 PM Binding to RabbitMQ server sydnagios
+11/13/2016 10:03:59 PM Query from DB mydb
+11/13/2016 10:04:07 PM RPC request: ipconfig
+11/14/2016 05:27:45 AM Socket Error: 10054
+11/14/2016 05:27:45 AM Socket closed when connection was open
+11/14/2016 05:27:45 AM Disconnected from RabbitMQ at sydnagios:5672 (0): Not specified
+11/14/2016 05:27:45 AM Connection close detected
+11/14/2016 11:11:45 AM Connecting to 10.2.1.107:5672
+11/14/2016 11:11:45 AM Created channel=1
+11/14/2016 11:11:45 AM Binding to RabbitMQ server sydnagios
+11/14/2016 11:11:45 AM Query from DB mydb
+11/14/2016 11:11:57 AM RPC request: dir
+11/14/2016 11:14:25 AM Connecting to 10.2.1.107:5672
+11/14/2016 11:14:26 AM Created channel=1
+11/14/2016 11:14:26 AM Binding to RabbitMQ server sydnagios
+11/14/2016 11:14:26 AM Query from DB mydb
+11/14/2016 11:14:31 AM Connecting to 10.2.1.107:5672
+11/14/2016 11:14:31 AM Created channel=1
+11/14/2016 11:19:27 AM RPC request: hostname
+11/14/2016 11:20:55 AM RPC request: ipconfig
+11/14/2016 11:21:04 AM RPC request: hostname
+11/14/2016 11:22:57 AM Connecting to 10.2.1.107:5672
+11/14/2016 11:22:57 AM Created channel=1
+11/14/2016 11:22:57 AM Binding to RabbitMQ server sydnagios
+11/14/2016 11:22:57 AM Query from DB mydb
+11/14/2016 11:26:18 AM RPC request: hostname
