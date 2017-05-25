@@ -1,0 +1,98 @@
+
+.reg-form {
+    width: 400px;
+}
+.main {
+    margin: 50px auto 60px;
+    width: 830px;
+
+}
+.header {
+    height: 110px;
+    background: url(../img/headbg.jpg) repeat-x left bottom;
+}
+.form-item {
+    position: relative;
+    border: solid 1px #ddd;
+    width: 398px;
+    height: 52px;
+    z-index: 0;
+}
+.form-item-account{
+
+    z-index: 20;
+}
+.reg-form {
+    width: 400px;
+
+}
+.form-item .i-status {
+    position: absolute;
+    display: none;
+    width: 16px;
+    height: 16px;
+    top: 20px;
+    right: 20px;
+}
+.form-item .field {
+    border: 0 none;
+    font-size: 14px;
+    width: 190px;
+    height: 19px;
+    padding-bottom: 11px;
+    padding-left: 20px;
+    padding-top: 16px;
+}
+.input-tip {
+    color: #c5c5c5;
+    height: 27px;
+    font-size: 12px;
+    padding-top: 5px;
+}
+body, button, input, txt {
+    font-family: "Microsoft YaHei","Hiragino Sans GB";
+}
+
+.header .logo {
+    width: 160px;
+    height: 50px;
+    float: left;
+    margin-top: 24px;
+}
+
+ .logo-title {
+    float: left;
+    height: 34px;
+    line-height: 34px;
+    font-size: 24px;
+    color: #333;
+    padding-left: 30px;
+    margin-top: 40px;
+    margin-left: -100px;
+
+}
+
+.header .have-account {
+    font-size: 16px;
+    float: right;
+    margin-top: 55px;
+    color: #999;
+}
+
+.footer a {
+    color: #999;
+    margin: 0 10px;
+}
+
+.footer {
+    font-size: 12px;
+    text-align: center;
+    border-top: solid 1px #e6e6e6;
+    color: #999;
+    padding-bottom: 30px;
+}
+
+.w {
+    width: 990px;
+    margin: 0 auto;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="../css/forms.css">
+    <style>
+         .item span{
+            position: absolute;
+            top: 30px;
+            right:0;
+            font-size:18px;
+            background-color: red;
+            color: white;
+            display: inline-block;
+            width: 250px;
+        }
+    </style>
+
+</head>
+<body>
+<div>
+    <h1>欢迎会员登录</h1>
+
+</div>
+
+<form id='form1' action="" method="POST">
+    <div class="outside">
+        <div class="inside1">
+            <a href="index.html">
+
+            <img src="../img/pexels-photo.jpg" height="300" width="700" >
+
+
+            </a>
+        </div>
+
+
+        <div class="inside2">
+            <br>
+            <div >用户登录</div><br>
+            <div class="item">
+                <label>用户名</label>
+                <input id="username" type="text" placeholder="请输入用户名" label="用户名" name="user" require="true" min-len="4">
+
+
+            </div>
+            <div class="item">
+                <label>密码</label>
+                <input id="pwd" type="password" placeholder="请输入密码" label="密码" name="pwd" require="true">
+
+            </div>
+
+
+            <div>
+                <div class="button" >
+
+                    <input type="button" id="b1" value="用户登录">
+
+                </div>
+                    <p>新用户请<a href="signup.html">注册</a></p>
+                    <p><a href="#"><span>忘记密码</span></a></p>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+</form>
+
+
+<br>
+
+<script src="../js/jquery-1.12.4.js"></script>
+<script src="../js/commons.js"></script>
+
+<script>
+    $(function(){
+        $.valid('#form1');
+    });
+
+    var bt=document.getElementById('b1');
+    var username=document.getElementById('username');
+    var pwd=document.getElementById('pwd');
+
+
+</script>
+
+</body>
+</html>

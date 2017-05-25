@@ -1,0 +1,252 @@
+ body{
+            margin: 0 auto;
+            width: 1200px;
+ }
+
+ul{
+    margin: 0;
+    list-style-type: none;
+}
+table{
+
+    border-color: black;
+    border: 1px;
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: red;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    font-size: 20px;
+    margin-left: 40px;
+}
+
+.img1{
+    background-image: url("../img/mother.jpg");
+    height: 180px;
+    width: 276px;
+
+    background-repeat: no-repeat;
+    float: left;
+
+}
+
+/*商品分类那一行*/
+.options{
+    height: 40px;
+    /*background-color: coral;*/
+
+    line-height: 40px;
+
+}
+
+.options ul li{
+    padding: 0 8px 0 8px;
+    color: white;
+    cursor: pointer;
+    float: left;
+    font-size: 20px
+
+}
+/*掌柜的自我介绍*/
+.say{
+    width:25%;
+    /*line-height: normal;*/
+    color:green;
+    font-size: 20px;
+    height: 50%;
+    float: left;
+    /*margin-bottom: -20px;*/
+}
+
+/*公司名字*/
+.company{
+
+    float: left;
+    width: 50%;
+    float: left;
+}
+.w2 ul li{
+    float: left;
+    padding: 0 8px 0 8px;
+    color: green;
+    cursor: pointer;
+}
+.w ul li{
+    float: right;
+    padding: 0 8px 0 8px;
+    color: black;
+    cursor: pointer;
+}
+
+ul li:hover{
+    background-color: gainsboro;
+    color: green;
+}
+/*标题*/
+.pg-header{
+    height: 44px;
+    background-color:white;
+    line-height: 44px;
+    /*color: black;*/
+
+}
+.w,w2{
+    /*width: 980px;*/
+    margin: 0 auto;
+    /*background-color: red;*/
+}
+/*语言选择*/
+.lang{
+    float:left;
+
+}
+/*中间主体部分*/
+.pg-body{
+    border: 1px;
+    color: transparent;
+    border-style: solid;
+
+
+}
+
+.name{
+    background-image:url("../img/grass.jpg");
+    height: 180px;
+
+    /*width:1000px;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0;
+
+    color: black;
+    text-align: center;
+    font-size: 30px;
+}
+
+/*右边的大块*/
+.frm1{
+
+    width:100%;
+    margin: 0 auto;
+    /*margin-top:10px;*/
+    height:800px;
+    border:1px solid greenyellow;
+
+}
+.des{
+    font-size: 15px;
+    width:70%;
+    color: dodgerblue;
+
+
+}
+
+/*左边的大块*/
+.category{
+
+    width: 25%;
+    height: 800px;
+    /*background-color: greenyellow;*/
+    background-image: url("../img/green.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    float: left;
+    cursor: pointer;
+
+}
+
+.frm1_right{
+    height: 600px;
+    width: 75%;
+    float:left
+
+
+}
+
+.sub_cat{
+    height: 200px;
+    /*background-color: aliceblue;*/
+    /*border:1px solid red;*/
+    background-image: url("../img/grass2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.sub_cat ol list{
+    font-size: 50px;
+    color: blue;
+
+
+}
+.pic{
+    height: 500px;
+    border:1px solid transparent;
+    margin-top: 20px;
+}
+
+.subpic{
+    width: 25%;
+    height:250px;
+    float:left;
+    /*background-color: lightgreen;*/
+
+
+
+}
+
+.f1{
+    background-image: url("../img/tt.png");
+
+    background-size:38%;
+    background-repeat: no-repeat;
+
+    color: green;
+
+}
+.img3{
+
+    background-image: url("../img/bellamy.jpg");
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position: -33px -41px;
+    cursor: pointer;
+
+}
+
+.img2{
+    img: url("../img/arrow.JPG");
+    height: 10px;
+
+
+}
+
+.submitform{
+    height: 50px;
+    width: 100%;
+    margin-left: 0;
+    border: 1px double transparent;
+    color: green;
+    font-size: 20px;
+    /*background-color: white;*/
+    /*background-image: url("../img/butterfly.jpg");*/
+    line-height: 50px;
+}
+
+.price{
+    font-size: 15px;
+    color: blue;
+
+}
+
+.result{
+    height: 20px;
+    font-size: 15px;
+    color: red;
+    background-image: url("../img/grass.jpg");
+    /*float:left; */
+
+    }

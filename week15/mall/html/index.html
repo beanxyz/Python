@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+     <link rel="stylesheet" href="../css/resetcss.css"/>
+    <link rel="stylesheet" href="../css/main.css"/>
+    <link rel="stylesheet" href="../css/index.css">
+    <style>
+    .item{
+            /*padding: 50px;*/
+            position: relative;
+            width:100px;
+            border:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="pg-header">
+
+
+
+        <div class="w">
+            <ul>
+                <li><a href="#">帮助</a></li>
+                <li>
+					<a href="cart.html">购物车</a>
+					<span id="itemNum" style="color: red"></span>
+				</li>
+                <li><a href="signup.html">注册</a></li>
+                <li><a href="login.html" id="l1">登录</a></li>
+                <li><a href="login.html" id="l2" style="display: none; color: red" >已登录</a></li>
+
+
+            </ul>
+
+        </div>
+			<div class="search floatL">
+				<div class="searchLine clearFix">
+					<input class="searchInput floatL" type="text" name="search" />
+					<input class="searchBtn floatL" type="submit" value="搜索" />
+				</div>
+
+			</div>
+    </div>
+
+
+
+
+    <div class="pg-body" class="pg-body"  >
+        <div class="tt">
+
+        <div id="turnimg">
+            <ul id="imgs">
+                <li><a href="#"><img src="../img/1.jpg"/></a></li>
+                <li><a href="#"><img src="../img/2.jpg"/></a></li>
+                <li><a href="#"><img src="../img/3.jpg"/></a></li>
+                <li><a href="#"><img src="../img/4.jpg"/></a></li>
+            </ul>
+            <ul id="circles">
+                <li class="currimg" data-num="0"></li>
+                <li class="circle" data-num="1"></li>
+                <li class="circle" data-num="2"></li>
+                <li class="circle" data-num="3"></li>
+            </ul>
+        <div class="arr left" id="arrL">
+            <div id="leftarr"></div>
+        </div>
+        <div class="arr right" id="arrR">
+            <div id="rightarr"></div>
+        </div>
+    </div>
+
+        </div>
+
+
+        <div class="noticeform">
+         <div class="news floatR">
+				<div >
+					<div style="position: relative">
+                        <div style="position: absolute;left: 0;top:0">
+                            <img src="../img/no_login.jpg" height="50px" width="50px">
+                            <a  href="#" target="_blank"></a>
+                        </div>
+                        <div id="d1" style="position: absolute;right: 0;top:0">
+                            <p >Hi，欢迎来到山寨商城！</p>
+                            <p>
+                                <a href="login.html">登录</a>
+                                <a href="signup.html">注册</a>
+                            </p>
+                        </div>
+
+						<div id="d2" style="display:none;position: absolute;right: 0;top:0;">
+                            <p >用户信息：豆子</p>
+                            <p>
+                                <a href="#" id="logout" onclick="userlogout()">退出登录</a>
+                                <a href="#">个人档案</a>
+                            </p>
+                        </div>
+                    </div>
+
+				</div>
+				<ul class="jdNewsList">
+					<li><a href="#">［特惠］萌宠挑战赛， 满199减100</a></li>
+					<li><a href="#">［公告］京东与史莱姆合作升级</a></li>
+					<li><a href="#">［特惠］奶粉2段 5折！</a></li>
+
+
+				</ul>
+                    <div class="shortcut2">
+                        <div class="shortcut clearFix">
+                            <a href="#"><span class="charge"></span>话费</a>
+                            <a href="#"><span class="ticket"></span>机票</a>
+                            <a href="#"><span class="movieTicket"></span>电影票</a>
+                            <a href="#"><span class="game"></span>游戏</a>
+                            <a href="#"><span class="lottery"></span>彩票</a>
+                            <a href="#"><span class="gas"></span>加油卡</a>
+                            <a href="#"><span class="hotel"></span>酒店</a>
+                            <a href="#"><span class="trainTicket"></span>火车票</a>
+                            <a href="#"><span class="crowdFunding"></span>众筹</a>
+                            <a href="#"><span class="money"></span>理财</a>
+                            <a href="#"><span class="present"></span>礼品卡</a>
+                            <a href="#"><span class="receipt"></span>白条</a>
+                        </div>
+                    </div>
+
+			</div>
+        </div>
+
+
+        <div class="body-menu " >
+
+            <ul class="primarySort" id="leftmenu">
+                <li onmouseover="show('i1')"> 家用电器 </li>
+                <li onmouseover="show('i2')"> 家用电器 </li>
+                <li onmouseover="show('i3')"> 家用电器 </li>
+                <li onmouseover="show('i1')"> 家用电器 </li>
+                <li onmouseover="show('i2')"> 家用电器 </li>
+                <li onmouseover="show('i3')"> 家用电器 </li>
+                <li onmouseover="show('i1')"> 家用电器 </li>
+                <li onmouseover="show('i2')"> 家用电器 </li>
+                <li onmouseover="show('i3')"> 家用电器 </li>
+                <li onmouseover="show('i2')"> 家用电器 </li>
+                <li onmouseover="show('i1')"> 家用电器 </li>
+                <li onmouseover="show('i1')"> 家用电器 </li>
+                <li onmouseover="show('i1')"> 家用电器 </li>
+
+
+
+
+            </ul>
+
+
+
+        </div>
+        <div id='all' class="body-content" >
+           <div id="i1" class="hide w" >
+
+               <dl class="secondSortDetial clearFix clearTopBorder">
+									<dt><a href="#">电视<span class="secondSortDS">&rsaquo;</span></a></dt>
+									<dd>
+										<a href="#">合资品牌</a>
+										<a href="#">国产品牌</a>
+										<a href="#">互联网品牌</a>
+									</dd>
+								</dl>
+								<!-- 二级分类导航具体项 -->
+								<dl class="secondSortDetial clearFix">
+									<dt><a href="#">空调<span class="secondSortDS">&rsaquo;</span></a></dt>
+									<dd>
+										<a href="#">壁挂式空调</a>
+										<a href="#">柜式空调</a>
+										<a href="#">中央空调</a>
+										<a href="#">空调配件</a>
+									</dd>
+								</dl>
+								<!-- 二级分类导航具体项 -->
+								<dl class="secondSortDetial clearFix">
+									<dt><a href="#">洗衣机<span class="secondSortDS">&rsaquo;</span></a></dt>
+									<dd>
+										<a href="#">滚筒洗衣机</a>
+										<a href="#">洗烘一体机</a>
+										<a href="#">波轮洗衣机</a>
+										<a href="#">迷你洗衣机</a>
+										<a href="#">波轮洗衣机</a>
+										<a href="#">迷你洗衣机</a>
+										<a href="#">洗衣机配件</a>
+									</dd>
+								</dl>
+								<!-- 二级分类导航具体项 -->
+								<dl class="secondSortDetial clearFix">
+									<dt><a href="#">洗衣机<span class="secondSortDS">&rsaquo;</span></a></dt>
+									<dd>
+										<a href="#">滚筒洗衣机</a>
+										<a href="#">洗烘一体机</a>
+										<a href="#">波轮洗衣机</a>
+										<a href="#">迷你洗衣机</a>
+										<a href="#">洗衣机配件</a>
+									</dd>
+								</dl>
+								<!-- 二级分类导航具体项 -->
+								<dl class="secondSortDetial clearFix">
+									<dt><a href="#">洗衣机<span class="secondSortDS">&rsaquo;</span></a></dt>
+									<dd>
+										<a href="#">滚筒洗衣机</a>
+										<a href="#">柜式空调</a>
+										<a href="#">中央空调</a>
+										<a href="#">空调配件</a>
+										<a href="#">洗衣机配件</a>
+									</dd>
+								</dl>
+								<!-- 二级分类导航具体项 -->
+								<dl class="secondSortDetial clearFix">
+									<dt><a href="#">洗衣机<span class="secondSortDS">&rsaquo;</span></a></dt>
+									<dd>
+										<a href="#">滚筒洗衣机</a>
+										<a href="#">洗烘一体机</a>
+										<a href="#">波轮洗衣机</a>
+										<a href="#">三门</a>
+										<a href="#">双门</a>
+										<a href="#">冷柜/冰吧</a>
+										<a href="#">迷你洗衣机</a>
+										<a href="#">洗衣机配件</a>
+									</dd>
+								</dl>
+								<!-- 二级分类导航具体项 -->
+								<dl class="secondSortDetial clearFix">
+									<dt><a href="#">冰箱<span class="secondSortDS">&rsaquo;</span></a></dt>
+									<dd>
+										<a href="#">多门</a>
+										<a href="#">对开门</a>
+										<a href="#">三门</a>
+										<a href="#">双门</a>
+										<a href="#">冷柜/冰吧</a>
+										<a href="#">酒柜</a>
+										<a href="#">冰箱配件</a>
+									</dd>
+								</dl>
+								<!-- 二级分类导航具体项 -->
+								<dl class="secondSortDetial clearFix">
+									<dt><a href="#">厨卫大电<span class="secondSortDS">&rsaquo;</span></a></dt>
+									<dd>
+										<a href="#">油烟机</a>
+										<a href="#">燃气机</a>
+										<a href="#">烟灶套装</a>
+										<a href="#">消毒柜</a>
+										<a href="#">嵌入式厨电</a>
+									</dd>
+								</dl>
+								<!-- 二级分类导航具体项 -->
+								<dl class="secondSortDetial clearFix">
+									<dt><a href="#">厨房小电<span class="secondSortDS">&rsaquo;</span></a></dt>
+									<dd>
+										<a href="#">电饭煲</a>
+										<a href="#">微波炉</a>
+										<a href="#">电烤箱</a>
+										<a href="#">电磁炉</a>
+										<a href="#">电压力锅</a>
+										<a href="#">豆浆机</a>
+										<a href="#">咖啡机</a>
+										<a href="#">面包机</a>
+										<a href="#">电烧烤炉</a>
+										<a href="#">电热饭盒</a>
+										<a href="#">其它厨房电器</a>
+									</dd>
+								</dl>
+								<!-- 二级分类导航具体项 -->
+								<dl class="secondSortDetial clearFix">
+									<dt><a href="#">生活电器<span class="secondSortDS">&rsaquo;</span></a></dt>
+									<dd>
+										<a href="#">取暖电器</a>
+										<a href="#">吸尘器</a>
+										<a href="#">净化器</a>
+										<a href="#">扫地机器人</a>
+										<a href="#">加湿器</a>
+										<a href="#">除湿机</a>
+										<a href="#">干衣机</a>
+										<a href="#">清洁机</a>
+										<a href="#">收录/音机</a>
+										<a href="#">其它生活电器</a>
+										<a href="#">生活电器配件</a>
+									</dd>
+								</dl>
+
+
+
+
+
+           </div>
+            <div id="i2" class="hide" onmouseout="originView()">
+                <p>     近日，国务院办公厅印发《关于推进医疗联合体建设和发展的指导意见》。意见提出，开展医疗联合体（以下简称医联体）建设，是深化医改的重要步骤和制度创新，有利于调整优化医疗资源结构布局，促进医疗卫生工作重心下移和资源下沉，提升基层服务能力，有利于医疗资源上下贯通，提升医疗服务体系整体效能，更好实施分级诊疗和满足群众健康需求。
+
+                    　　4月20日，李克强总理在考察威海孙家疃医院时就强调了医联体的重要作用：中医讲“通则不痛”。我们就是要让优质医疗资源上下贯通，以医联体之“通”，破解群众看病之“痛”。作为社区医院的威海孙家疃医院与威海市中医院组建医联体，市中医院专家可以在此出诊并视频远程诊疗。
+
+                    　　此次指导意见所言明的医联体的重要性不言而喻，也对医联体的功能与目标进一步做了明确。医联体最重要的目的是要将优质医疗资源“下沉”，要求试点省份的三级公立医院要全部参与并发挥引领作用，每个地市以及分级诊疗试点城市至少建成一个有明显成效的医联体。同时，还需要探索多种形式的医联体，除了地市级医院与基层、社区医院的联合，还要求县级区域内也进行医联。李克强总理用中药治病的原理来比喻医联体，非常形象与恰当。原来，在一定区域内，病人的检验结果医院互相不认可，处方缺乏流动性，药品也很难共享，病人转诊机制非常不畅。更重要的，医保支付缺乏统筹令许多病人不便。
+
+                    　　区域内医疗资源的“不通”成为一种循环，并且还有着自我强化的特征。对于吸纳了各种优质资源的三级医院们来说，它们垄断资源、“跑马圈地”、“虹吸”基层资源、挤压社会办医空间，但同时这个负荷过重的机构又无法为每个病人提供很好的服务。公立医院改革是新医改中最重要最难啃的一部分，破除以药养医、建立现代医院制度正在推进，医联体的建设就是要推动它们愿意将一部分医疗资源下沉到基层，起到带动作用。这同时也是在为大医院们减负，以使得它们轻装上阵，将更多精力放在疑难重症与科研方面，并且更加体现公益性。
+
+                    　　此次医联体试点也要求建立明确的绩效考核机制，包括建立医联体考核指标体系，重点考核医联体技术辐射带动情况、医疗资源下沉情况等。也会将考核评价结果作为人事任免、评优评先等的重要依据，并与医务人员绩效工资、进修、晋升等挂钩。在经过试点之后，医联体的改革时间表也非常明确，计划在2020年全面实施，而在试点阶段需要完成的改革任务非常繁重，包括促进公立医院改革、医保支付方式改革、分级诊疗制度建设等。
+                                   近日，国务院办公厅印发《关于推进医疗联合体建设和发展的指导意见》。意见提出，开展医疗联合体（以下简称医联体）建设，是深化医改的重要步骤和制度创新，有利于调整优化医疗资源结构布局，促进医疗卫生工作重心下移和资源下沉，提升基层服务能力，有利于医疗资源上下贯通，提升医疗服务体系整体效能，更好实施分级诊疗和满足群众健康需求。
+
+                    　　4月20日，李克强总理在考察威海孙家疃医院时就强调了医联体的重要作用：中医讲“通则不痛”。我们就是要让优质医疗资源上下贯通，以医联体之“通”，破解群众看病之“痛”。作为社区医院的威海孙家疃医院与威海市中医院组建医联体，市中医院专家可以在此出诊并视频远程诊疗。
+
+                    　　此次指导意见所言明的医联体的重要性不言而喻，也对医联体的功能与目标进一步做了明确。医联体最重要的目的是要将优质医疗资源“下沉”，要求试点省份的三级公立医院要全部参与并发挥引领作用，每个地市以及分级诊疗试点城市至少建成一个有明显成效的医联体。同时，还需要探索多种形式的医联体，除了地市级医院与基层、社区医院的联合，还要求县级区域内也进行医联。李克强总理用中药治病的原理来比喻医联体，非常形象与恰当。原来，在一定区域内，病人的检验结果医院互相不认可，处方缺乏流动性，药品也很难共享，病人转诊机制非常不畅。更重要的，医保支付缺乏统筹令许多病人不便。
+
+                    　　区域内医疗资源的“不通”成为一种循环，并且还有着自我强化的特征。对于吸纳了各种优质资源的三级医院们来说，它们垄断资源、“跑马圈地”、“虹吸”基层资源、挤压社会办医空间，但同时这个负荷过重的机构又无法为每个病人提供很好的服务。公立医院改革是新医改中最重要最难啃的一部分，破除以药养医、建立现代医院制度正在推进，医联体的建设就是要推动它们愿意将一部分医疗资源下沉到基层，起到带动作用。这同时也是在为大医院们减负，以使得它们轻装上阵，将更多精力放在疑难重症与科研方面，并且更加体现公益性。
+
+                    　　此次医联体试点也要求建立明确的绩效考核机制，包括建立医联体考核指标体系，重点考核医联体技术辐射带动情况、医疗资源下沉情况等。也会将考核评价结果作为人事任免、评优评先等的重要依据，并与医务人员绩效工资、进修、晋升等挂钩。在经过试点之后，医联体的改革时间表也非常明确，计划在2020年全面实施，而在试点阶段需要完成的改革任务非常繁重，包括促进公立医院改革、医保支付方式改革、分级诊疗制度建设等。
+                                        近日，国务院办公厅印发《关于推进医疗联合体建设和发展的指导意见》。意见提出，开展医疗联合体（以下简称医联体）建设，是深化医改的重要步骤和制度创新，有利于调整优化医疗资源结构布局，促进医疗卫生工作重心下移和资源下沉，提升基层服务能力，有利于医疗资源上下贯通，提升医疗服务体系整体效能，更好实施分级诊疗和满足群众健康需求。
+
+                    　　4月20日，李克强总理在考察威海孙家疃医院时就强调了医联体的重要作用：中医讲“通则不痛”。我们就是要让优质医疗资源上下贯通，以医联体之“通”，破解群众看病之“痛”。作为社区医院的威海孙家疃医院与威海市中医院组建医联体，市中医院专家可以在此出诊并视频远程诊疗。
+
+                    　　此次指导意见所言明的医联体的重要性不言而喻，也对医联体的功能与目标进一步做了明确。医联体最重要的目的是要将优质医疗资源“下沉”，要求试点省份的三级公立医院要全部参与并发挥引领作用，每个地市以及分级诊疗试点城市至少建成一个有明显成效的医联体。同时，还需要探索多种形式的医联体，除了地市级医院与基层、社区医院的联合，还要求县级区域内也进行医联。李克强总理用中药治病的原理来比喻医联体，非常形象与恰当。原来，在一定区域内，病人的检验结果医院互相不认可，处方缺乏流动性，药品也很难共享，病人转诊机制非常不畅。更重要的，医保支付缺乏统筹令许多病人不便。
+
+                    　　区域内医疗资源的“不通”成为一种循环，并且还有着自我强化的特征。对于吸纳了各种优质资源的三级医院们来说，它们垄断资源、“跑马圈地”、“虹吸”基层资源、挤压社会办医空间，但同时这个负荷过重的机构又无法为每个病人提供很好的服务。公立医院改革是新医改中最重要最难啃的一部分，破除以药养医、建立现代医院制度正在推进，医联体的建设就是要推动它们愿意将一部分医疗资源下沉到基层，起到带动作用。这同时也是在为大医院们减负，以使得它们轻装上阵，将更多精力放在疑难重症与科研方面，并且更加体现公益性。
+
+                    　　此次医联体试点也要求建立明确的绩效考核机制，包括建立医联体考核指标体系，重点考核医联体技术辐射带动情况、医疗资源下沉情况等。也会将考核评价结果作为人事任免、评优评先等的重要依据，并与医务人员绩效工资、进修、晋升等挂钩。在经过试点之后，医联体的改革时间表也非常明确，计划在2020年全面实施，而在试点阶段需要完成的改革任务非常繁重，包括促进公立医院改革、医保支付方式改革、分级诊疗制度建设等。
+                </p>
+
+            </div>
+            <div id="i3" class="hide" onmouseout="originView()">
+                            <p>First, we get some important information from session storage — namely, the shipping rate and the total number of items in the cart. We divide the total shipping amount by the number of items to get the shipping rate for each item.
+            Then, we set the URL for the action attribute of the form, together with our business email and currency code (taken from the paypalBusinessEmail and paypalCurrency properties, respectively).
+            Finally, we loop through the items of our cart, and we append to the form several hidden input elements containing the quantities, the names of the products, the number of items for each product, the prices (amounts), and the unit shipping rates.
+            The monetary values are formatted as 00,00. Explaining all of the possible values of a PayPal form and the various types of PayPal forms goes well beyond the scope of this article, If you want to go deeper, I recommend the following reading:
+                </p>
+            </div>
+            <div id="io" style="position: relative;width: 750px;height: 400px">
+                <div style="position: absolute;left: 0;top:0;right:0">
+                    <a href="#" style="border: 0">
+                    <img src="../img/5.JPG" width="750px" height="200px">
+                    </a>
+
+                </div>
+
+                <div style="position: absolute;left: 0;bottom: 0">
+                    <a href="#" style="border: 0">
+                        <img src="../img/6.JPG" width="400px" height="200px">
+
+                    </a>
+
+                </div> <div style="position: absolute;right: 0;bottom:0">
+                    <a href="#" style="border: 0">
+                                            <img src="../img/7.JPG" width="350px" height="200px">
+
+                    </a>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+        <div class="cheap floatL clearFix">
+				<span class="cheapTitle">特价促销</span>
+				    <ul class="goods">
+                        <li data-guid="g01" >
+                            <img src="../img/01.jpg">
+                            <p class="desc">Gucci 女式包</p>
+                            <p class="price">2888</p>
+                            <div class="add2cart item">
+                                <button onclick="Favor(this)">添加到购物车</button>
+                            </div>
+                        </li>
+                        <li data-guid="g02">
+                            <img src="../img/02.jpg">
+                            <p class="desc">项链</p>
+                            <p class="price">888</p>
+                            <div class="add2cart item">
+                                <button onclick="Favor(this)">添加到购物车</button>
+                            </div>
+                        </li>
+                        <li data-guid="g03">
+                            <img src="../img/03.jpg">
+                            <p class="desc">名牌手表</p>
+                            <p class="price">998</p>
+                            <div class="add2cart item">
+                                <button onclick="Favor(this)">添加到购物车</button>
+                            </div>
+                        </li>
+                        <li data-guid="g04">
+                            <img src="../img/04.jpg">
+                            <p class="desc">女式包</p>
+                            <p class="price">999</p>
+                            <div class="add2cart item">
+                                 <button onclick="Favor(this)">添加到购物车</button>
+                            </div>
+
+                    </ul>
+
+
+
+			</div>
+
+
+
+    <div class="bigContainer">
+		<div class="container footer">
+			<ul class="footerLine01">
+				<a href="#">关于我们</a><span class="footerColLine"></span>
+				<a href="#">联系我们</a><span class="footerColLine"></span>
+				<a href="#">联系客服</a><span class="footerColLine"></span>
+				<a href="#">商家入驻</a><span class="footerColLine"></span>
+				<a href="#">营销中心</a><span class="footerColLine"></span>
+				<a href="#">手机京东</a><span class="footerColLine"></span>
+				<a href="#">友情链接</a><span class="footerColLine"></span>
+				<a href="#">销售联盟</a><span class="footerColLine"></span>
+				<a href="#">京东社区</a><span class="footerColLine"></span>
+				<a href="#">风险监测</a><span class="footerColLine"></span>
+				<a href="#">京东公益</a><span class="footerColLine"></span>
+				<a href="#">English Site</a><span class="footerColLine"></span>
+				<a href="#">Contact Us</a>
+			</ul>
+			<div class="footerLine02">
+				<a class="footerIcon2" href="#"><span class="footerIcon"></span>京公网安备 11000002000088号 </a>
+				<span class="footerColLine footerColLine02"></span>
+				<span class="footerText">京ICP证070359号</span>
+				<span class="footerColLine footerColLine02"></span>
+				<a href="#">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a>
+				<span class="footerColLine footerColLine02"></span>
+				<span class="footerText">新出发京零 字第大120007号</span>
+			</div>
+			<div class="footerLine03">
+				<span class="footerText">互联网出版许可证编号新出网证(京)字150号</span>
+				<span class="footerColLine footerColLine02"></span>
+				<a href="#">出版物经营许可证</a>
+				<span class="footerColLine footerColLine02"></span>
+				<a href="#">网络文化经营许可证京网文[2014]2148-348号</a>
+				<span class="footerColLine footerColLine02"></span>
+				<span class="footerText">违法和不良信息举报电话：4006561155</span>
+			</div>
+			<div class="footerLine04">
+				<span class="footerText">Copyright © 2004 - 2016  京东JD.com 版权所有</span>
+				<span class="footerColLine footerColLine02"></span>
+				<span class="footerText">消费者维权热线：4006067733</span>
+			</div>
+			<div class="footerLine05">
+				<span class="footerText">京东旗下网站：</span>
+				<a href="#">京东钱包</a>
+			</div>
+
+		</div>
+	</div>
+
+
+    <script>
+        function show(nid) {
+              console.log(nid)
+
+              var item=document.getElementById(nid);
+              var a=item.parentElement.children;
+//              console.log(a);
+//
+            for(var i=0;i<a.length;i++){
+//                console.log(a[i])
+                var c=a[i];
+                c.classList.add('hide');
+//                console.log(c);
+//            }
+
+            document.getElementById(nid).classList.remove('hide');
+
+        }}
+
+        function originView(){
+
+            var list=document.getElementById('io').parentElement.children;
+            for(var i=0;i<list.length;i++){
+                list[i].classList.add('hide')
+                console.log(list[i])
+            }
+
+            document.getElementById('io').classList.remove('hide')
+
+        }
+
+
+        function userlogout(){
+
+
+               var logout=document.getElementById('logout');
+    		console.log(logout)
+
+       var now = new Date();
+        now.setDate(now.getDate()-7);
+        document.cookie = 'accountInfo=xx;expires=' + now;
+        location.reload()
+
+
+
+
+		}
+
+
+    function Favor(ths){
+            // ths => this => 当前触发事件的标签
+            var top = 49;
+            var left = 71;
+            var op = 1;
+            var fontSize = 18;
+            var tag = document.createElement('span');
+            tag.innerText = '+1';
+            tag.style.color='red';
+            tag.style.position = 'absolute';
+            tag.style.top = top + "px";
+            tag.style.left = left + "px";
+            tag.style.opacity = op;
+            tag.style.fontSize = fontSize + 'px';
+            ths.parentElement.appendChild(tag);
+            var interval = setInterval(function(){
+                top -= 10;
+                left += 10;
+                fontSize += 5;
+                op -= 0.1;
+                tag.style.top = top + "px";
+                tag.style.left = left + "px";
+                tag.style.opacity = op;
+                tag.style.fontSize = fontSize + 'px';
+                if(op <= 0.2){
+                    clearInterval(interval);
+                    ths.parentElement.removeChild(tag);
+                }
+            }, 50);
+        }
+    </script>
+<script src="../js/home.js"></script>
+</body>
+</html>
