@@ -1,0 +1,50 @@
+{%  extends 'base.html' %}
+
+{% block css %}
+
+<style>
+
+
+</style>
+{% endblock %}
+
+
+
+{% block content %}
+
+
+<h1 class="page-header">部门列表</h1>
+            <ul>
+                {% for row in v1 %}
+                    <li style="height: 30px; font-size: 20px">
+                        <a href="/businessdetail-{{ row.id }}/"><span> {{ row.caption }} </span></a> |
+
+                        <a href="/businessdel-{{ row.id }}/" id="del">删除</a> |
+                        <a href="/businessedit-{{ row.id }}/">编辑</a>
+                    </li>
+                {% endfor %}
+            </ul>
+
+<h3 >添加部门</h3>
+            <form method="POST" action="/business">
+                <input type="text" name="caption" placeholder="组名" />
+
+
+                <input type="submit" value="添加"/>
+            </form>
+
+{% endblock %}
+
+{% block title%}业务线{% endblock %}
+
+{% block js%}
+<script>
+
+
+
+
+
+
+</script>
+
+{% endblock %}

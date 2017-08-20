@@ -1,0 +1,39 @@
+{%  extends 'base.html' %}
+
+{% block css %}
+
+<style>
+
+
+</style>
+{% endblock %}
+
+
+
+{% block content %}
+{{v1.nid}}
+
+<h1 class="page-header">业务修改</h1>
+
+            <form method="post" action="/businessedit-{{ v1.id }}/">
+
+                <input style="display: none" type="text" name="id" value="{{ v1.id }}" />
+                <input type="text" name="caption" value="{{ v1.caption }}" />
+
+                <input type="submit" value="提交" />
+            </form>
+{% endblock %}
+
+{% block title%}修改业务{% endblock %}
+
+{% block js%}
+<script>
+
+
+
+
+
+
+</script>
+
+{% endblock %}

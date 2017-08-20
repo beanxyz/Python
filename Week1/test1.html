@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>test</title>
+<style>
+
+
+.c1{
+    position:relative;
+    width:554px;
+    height:346px;
+    margin:0 auto
+}
+.c1 a,.c1 span{
+    display:none;
+    text-decoration:none
+}
+.c1:hover{
+    cursor:pointer
+}
+.c1:hover a.now{
+    cursor:pointer;
+    position:absolute;
+    top:0;
+    width:100%;
+    height:100%;
+    z-index:100;
+    left:0;
+    display:block;
+}
+.c1:hover span{
+    display:block;
+    position:absolute;
+    bottom:0;
+    left:0;
+    color:#FFF;
+    width:554px;
+    z-index:10;
+    height:36px;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="c1" style="background:url(1.jpg)">
+    <span>汽车之家</span>
+    <a href="#" class="now">&nbsp;</a>
+</div>
+
+
+
+</body>
+</html>

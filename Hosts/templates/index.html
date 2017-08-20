@@ -1,0 +1,28 @@
+{%  extends 'base.html' %}
+
+
+
+{% block content %}
+<h1 class="page-header">仪表盘</h1>
+<div class="row placeholders">
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <a href="/business"><img src="/static/img/business.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail"> </a>
+             <h4>业务线</h4>
+              <!--<span class="text-muted">Business</span>-->
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <a href="/host"> <img src="/static/img/server.jpg " width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail"></a>
+              <h4>主机管理</h4>
+              <!--<span class="text-muted">Hosts</span>-->
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <a href="/app"><img src="/static/img/App.png" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail"></a>
+              <h4>程序应用</h4>
+              <!--<span class="text-muted">Applications</span>-->
+            </div>
+
+          </div>
+
+{% endblock %}
+
+{% block title%}首页{% endblock %}

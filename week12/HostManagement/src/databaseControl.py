@@ -284,5 +284,5 @@ def run():
 
 
 if __name__ == '__main__':
-    # init_db()
-    run()
+    init_db()
+    # run()
