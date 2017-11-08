@@ -1,0 +1,320 @@
+{% extends 'base.html' %}
+
+{% block css %}
+<style>
+
+        .go{
+            width:20px;
+             border: solid 1px;
+            color: #66512c;
+            display: inline-block;
+            padding: 5px;
+        }
+
+        .pagination .page{
+            border: solid 1px;
+            color: #66512c;
+            display: inline-block;
+            padding: 5px;
+            background-color: #d6dade;
+            margin: 5px;
+        }
+        .pagination .page.active{
+            background-color: black;
+            color: white;
+        }
+        .host-tag{
+            display: inline-block;
+            padding: 3px;
+            /*border: 1px solid red;*/
+            /*background-color: palevioletred;*/
+        }
+        .hide{
+            display: none;
+        }
+        .shade{
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: black;
+            opacity: 0.6;
+            z-index: 100;
+        }
+        .add-modal,.edit-modal{
+            position: fixed;
+            height: 300px;
+            width: 400px;
+            top:100px;
+            left: 50%;
+            z-index: 101;
+            border: 1px solid red;
+            background: white;
+            margin-left: -200px;
+        }
+        .group{
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+    </style>
+
+{% endblock %}
+
+{% block title%}应用程序{% endblock %}
+{% block content%}
+ <h1 class="page-header">程序应用</h1>
+     <div>
+        <input id="add_app" type="button" value="添加" />
+    </div>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>应用名称</th>
+                <th>应用主机列表</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for app in app_list %}
+                <tr aid="{{ app.id }}">
+                    <td>{{ app.name }}</td>
+                    <td>
+                        {% for host in app.r.all %}
+                            <span class="host-tag" hid="{{ host.nid }}"> {{ host.hostname }} </span>
+                        {% endfor %}
+                    </td>
+                    <td>
+                        <a class="edit">编辑</a> |
+                        <a class="delete">删除</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+     <div>
+        <select id="ps" onchange="changePageSize(this)">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="50">50</option>
+
+        </select>
+    </div>
+    <div class="pagination">
+        {{ page_str }}
+    </div>
+
+    <div class="shade hide"></div>
+    <div class="add-modal hide">
+        <form id="add_form" method="POST" action="/app">
+            <div class="group">
+                <h1>应用名称</h1>
+                <input id="app_name" type="text" placeholder="应用名称" name="app_name" />
+            </div>
+
+            <div class="group">
+                <h1>主机列表</h1>
+                <select id="host_list" name="host_list" multiple>
+                    {% for op in host_list %}
+                        <option value="{{ op.nid }}">{{ op.hostname }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <!--<input type="submit" value="提交" />-->
+            <div class="group">
+                <input id="add_submit_ajax" type="button" value="提交" />
+                <input id="cancel" type="button" value="取消" />
+            <span id="erro_msg" style="color: red"></span>
+            </div>
+
+        </form>
+
+
+    </div>
+
+    <div class="edit-modal hide">
+        <form id="edit_form" method="POST" action="/host">
+            <input type="text" name="nid" style="display:none" />
+            <div class="group">
+                <h1>应用</h1>
+                 <input type="text" placeholder="应用名称" name="app" />
+            </div>
+
+            <div class="group">
+                <h1>主机列表</h1>
+                <select name="host_list" multiple>
+                    {% for op in host_list %}
+                        <option value="{{ op.nid }}">{{ op.hostname }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="group">
+                <a id="ajax_submit_edit" >确认编辑</a>
+                <a id="cancel1" >取消</a>
+            </div>
+
+        </form>
+
+
+    </div>
+{% endblock %}
+
+{% block js %}
+ <script>
+        $(function(){
+
+              var v3 = $.cookie('count');
+
+                $('#ps').val(v3);
+
+            $('#add_app').click(function(){
+                $('.shade,.add-modal').removeClass('hide');
+            });
+
+            $('#cancel').click(function(){
+                $('.shade,.add-modal').addClass('hide');
+            });
+
+
+            $('#add_submit_ajax').click(function(){
+                $.ajax({
+                    url: '/ajax_add_app',
+                    // data: {'user': 123,'host_list': [1,2,3,4]},
+                    data: $('#add_form').serialize(),
+                    type: "POST",
+                    dataType: 'JSON', // 内部
+                    traditional: true,
+                    success: function(obj){
+                        console.log(obj);
+
+                        if(obj.status){
+                            location.reload();
+                        }else{
+                            $('#erro_msg').text(obj.error);
+                        }
+                    },
+                    error: function () {
+
+                    }
+
+                })
+            });
+
+            $('#ajax_submit_edit').click(function () {
+
+                $.ajax({
+                    url:'/app_edit_ajax',
+                    type:'POST',
+                    data:$('#edit_form').serialize(),
+                    success:function (data) {
+                        var obj=JSON.parse(data)
+                        if(obj.status){
+
+                            location.reload()
+
+                        }
+                        else{}
+
+                    }
+
+
+                })
+
+
+            })
+
+            $('#cancel').click(function(){
+                $('.edit-modal,.shade').addClass('hide')
+
+            })
+            $('#cancel1').click(function(){
+                $('.edit-modal,.shade').addClass('hide')
+
+            })
+
+            $('.edit').click(function(){
+
+                $('.edit-modal,.shade').removeClass('hide');
+
+                var nid=$(this).parent().parent().attr('aid')
+                var name=$(this).parent().prev().prev().text()
+
+
+                var hid_list = [];
+                $(this).parent().prev().children().each(function(){
+                    var hid = $(this).attr('hid');
+                    hid_list.push(hid)
+                });
+
+                $('#edit_form').find('select').val(hid_list);
+                $('#edit_form').find('input[name="nid"]').val(nid)
+                $('#edit_form').find('input[name="app"]').val(name)
+                console.log(nid)
+
+
+
+
+                // 如果发送到后台
+                //
+                /*
+                obj = models.Application.objects.get(id=ai)
+                obj.name = "新Name"
+                obj.save()
+                obj.r.set([1,2,3,4])
+                */
+
+
+            })
+
+        })
+
+$('.delete').click(function () {
+
+                var hostlist = $(this).parent().prev().text();
+                var app= $(this).parent().prev().prev().text();
+
+                console.log(hostlist)
+                console.log(app)
+                var result = confirm("Want to delete?");
+                if (result) {
+                    //Logic to delete the item
+                    $.ajax({
+                        url:'/del_app_ajax',
+                        type:'POST',
+                        data:{'hostlist':hostlist,'app':app},
+                        success:function (data) {
+                            var obj=JSON.parse(data)
+                            console.log(obj)
+                            if(obj.status){
+                                location.reload()
+
+                            }
+                            else{
+                                alert(obj.error)
+                            }
+
+                        }
+
+
+                    })
+
+                }
+
+            })
+function changePageSize(ths){
+            var v = $(ths).val();
+            console.log(v);
+//            $.cookie('per_page_count',)
+//            $.cookie('per_page_count',v,{path:'/'});
+            $.cookie("per_page_count", v, { path: '/' });
+            $.cookie("count", v, { path: '/' });
+
+            location.reload();
+        }
+
+    </script>
+{% endblock %}
+

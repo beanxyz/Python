@@ -1,0 +1,15 @@
+	.item{
+		width:100px;
+		text-align:center;
+	}
+    input[type=text] {
+        width: 100px;
+        color:red;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    .red{
+        color: red;
+    }

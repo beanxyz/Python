@@ -1,0 +1,19 @@
+10/24/2016 11:03:07 AM alex Login Succesfully
+10/24/2016 11:03:10 AM alex succesfully check current directory path \alex
+10/24/2016 11:03:12 AM alex succesfully created folder aa
+10/24/2016 11:03:15 AM alex succesfully changed to folder aa
+10/24/2016 11:03:28 AM alex succesfully uploaded a file C:\FTP2.0\ftproot\alex\aa\junos.msi.zip
+10/24/2016 11:03:33 AM alex succesfully display folder contents of C:\FTP2.0\ftproot\alex\aa
+10/24/2016 11:03:39 AM alex succesfully changed to folder ..
+10/24/2016 11:03:40 AM alex succesfully display folder contents of C:\FTP2.0\ftproot\alex
+10/24/2016 11:03:46 AM alex succesfully deleted C:\FTP2.0\ftproot\alex\aa
+10/24/2016 11:03:47 AM alex succesfully display folder contents of C:\FTP2.0\ftproot\alex
+10/24/2016 11:03:50 AM alex succesfully check current directory path \alex
+10/24/2016 11:03:53 AM alex succesfully display folder contents of C:\FTP2.0\ftproot\alex
+10/24/2016 11:04:34 AM alex Login Succesfully
+10/24/2016 11:04:43 AM alex succesfully created folder aa\bb\cc
+10/24/2016 11:04:44 AM alex succesfully display folder contents of C:\FTP2.0\ftproot\alex
+10/24/2016 11:04:47 AM alex succesfully changed to folder aa
+10/24/2016 11:04:48 AM alex succesfully display folder contents of C:\FTP2.0\ftproot\alex\aa
+10/24/2016 11:04:55 AM alex succesfully canceled delete opertion of C:\FTP2.0\ftproot\alex\aa\bb
+10/24/2016 11:04:57 AM alex succesfully display folder contents of C:\FTP2.0\ftproot\alex\aa

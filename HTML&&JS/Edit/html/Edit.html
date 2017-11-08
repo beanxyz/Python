@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+<body>
+    <input id='b1' type="button"  value="全选" onclick="checkAll() ">
+    <input id='b2' type="button"   value="反选" onclick="reversAll()">
+    <input id='b3' type="button"  value="取消" onclick="cancelAll()">
+
+    <span id="edit" name="false">编辑模式</span>
+    <!--<input type="button" value="编辑模式" id="edit" name="false">-->
+
+    <table border="1" id="tb" >
+        <thead>
+            <tr>
+                <th>选项</th>
+                <th>IP</th>
+                <th>PORT</th>
+                <th>状态</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input id='test' type="checkbox" ></td>
+                <td class='item'>1.1.1.1</td>
+                <td class='item'>80</td>
+                <td class="item" name="status">
+                    <select disabled>
+                      <option value="online">在线</option>
+                      <option value="offline">下线</option>
+
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" ></td>
+                <td class='item'>1.1.1.2</td>
+                <td class='item'>80</td>
+                <td class="item" name="status">
+                    <select disabled>
+                      <option value="online">在线</option>
+                      <option value="offline">下线</option>
+
+                    </select>
+                </td>
+
+            </tr>
+            <tr>
+                <td><input type="checkbox" ></td>
+                <td class='item' id="i1">1.1.1.3</td>
+                <td class='item'>80</td>
+                <td class="item" name="status">
+                    <select disabled >
+                      <option value="online">在线</option>
+                      <option value="offline">下线</option>
+
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" ></td>
+                <td class='item'>1.1.1.4</td>
+                <td class='item'>80</td>
+                <td class="item" name="status">
+                    <select disabled>
+                      <option value="online">在线</option>
+                      <option value="offline">下线</option>
+
+                    </select>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="../js/jquery-1.12.4.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
